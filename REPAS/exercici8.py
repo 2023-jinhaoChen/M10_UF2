@@ -1,0 +1,6 @@
+print("Intoduce entre 1 hasta 3 parablas")
+text = input()
+primerChar = text.startswith()
+ultimoChar = text.endswith()
+longitud = text.__len__()
+print(f"has introducido {longitud} letras, primera letra es: {primerChar} y la ultima letra es: {ultimoChar}")

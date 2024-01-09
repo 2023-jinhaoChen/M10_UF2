@@ -1,0 +1,6 @@
+print("Introduce el valor(€)")
+valor = int(input())
+print("Introduce el porcentaje de IVA 4, 10 o 21(%)")
+iva = int(input())
+valor_final = valor * (1 + (iva/100))
+print(f"{valor}€ aplicando {iva}% de IVA es {valor_final}€")
