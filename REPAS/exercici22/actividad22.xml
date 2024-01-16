@@ -1,0 +1,32 @@
+<students>
+  <student altura="165">
+    <name>Jinhao</name>
+    <surname>Chen</surname>
+    <email>jinhaochen@gmail.com</email>
+    <dni>12345678X</dni>
+  </student>
+  <student altura="170">
+    <name>Pedro</name>
+    <surname>Blanco</surname>
+    <email>pedroblanco@gmail.com</email>
+    <dni>22345678X</dni>
+  </student>
+  <student altura="175">
+    <name>Miquel</name>
+    <surname>Casanova</surname>
+    <email>miquelcasanova@gmail.com</email>
+    <dni>32345678X</dni>
+  </student>
+  <student altura="180">
+    <name>Antonio</name>
+    <surname>Garcia</surname>
+    <email>Antoniogarcia@gmail.com</email>
+    <dni>42345678X</dni>
+  </student>
+  <student altura="160">
+    <name>Joan</name>
+    <surname>Martinez</surname>
+    <email>joanmartinez@gmail.com</email>
+    <dni>52345678X</dni>
+  </student>
+</students>
