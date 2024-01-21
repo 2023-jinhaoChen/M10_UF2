@@ -1,0 +1,28 @@
+{
+    "book": [
+        {
+            "titulo": "Harry Potter and the Chamber of Secrets",
+            "cover": "cover1",
+            "year": "1997",
+            "pages": "200"
+        },
+        {
+            "titulo": "Harry Potter and the Prisoner of Azkaban",
+            "cover": "cover2",
+            "year": "1998",
+            "pages": "200"
+        },
+        {
+            "titulo": "Harry Potter and the Goblet of Fire",
+            "cover": "cover3",
+            "year": "1999",
+            "pages": "200"
+        },
+        {
+            "titulo": "Harry Potter and the Chamber of Secrets",
+            "cover": "cover4",
+            "year": "2000",
+            "pages": "200"
+        }
+    ]
+}
