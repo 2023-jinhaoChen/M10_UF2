@@ -1,5 +1,5 @@
 def read(connection):
-    read_query = "SELECT * FROM TABLE users;"
+    read_query = "SELECT * FROM users;"
     try:
         connection.execute(read_query)
         for user in connection:
