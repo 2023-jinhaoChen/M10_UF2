@@ -1,17 +1,4 @@
-from connection import *
-
-create_table_query = """
-CREATE TABLE Users(
-    User_id SERIAL PRIMARY KEY,
-    User_name VARCHAR(255) NOT NULL,
-    USER_surname VARCHAR(255) NOT NULL,
-    USER_surname2 VARCHAR(255),
-    User_age INT NOT NULL,
-    User_email VARCHAR(255) NOT NULL
-);
-"""
-connection.execute(create_table_query)
-connection.execute("COMMIT;")
+from connection import connection
 
 salir = False
 while not salir:
@@ -26,4 +13,4 @@ while not salir:
         case 4:
             delete()
         case 5:
-            create_table()
+            create_table(connection)
