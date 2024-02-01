@@ -1,5 +1,6 @@
 from connection import *
 from create_table import create_table
+from read import read
 
 menu = """
 -------------------------------------MENÚ----------------------------------
