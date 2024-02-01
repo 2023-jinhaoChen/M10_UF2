@@ -1,14 +1,17 @@
 def create_table(connection):
     create_table_query = """
-    CREATE TABLE Users(
-        User_id SERIAL PRIMARY KEY,
-        User_name VARCHAR(255) NOT NULL,
-        USER_surname VARCHAR(255) NOT NULL,
-        USER_surname2 VARCHAR(255),
-        User_age INT NOT NULL,
-        User_email VARCHAR(255) NOT NULL
+    CREATE TABLE users(
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(255) NOT NULL,
+        surname VARCHAR(255) NOT NULL,
+        surname2 VARCHAR(255),
+        age INT NOT NULL,
+        email VARCHAR(255) NOT NULL
     );
     """
-
-    connection.execute(create_table_query)
-    connection.execute("COMMIT;")
+    try:
+        connection.execute(create_table_query)
+    except Exception as e:
+        print(e)
+    finally:
+        connection.execute("COMMIT;")
