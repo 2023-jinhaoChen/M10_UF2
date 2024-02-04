@@ -1,8 +1,9 @@
-from connection import connection, cursor
-from create_table import create_table
-from read import read
+from connection import connection
 from create import create
+from read import read
+from update import update
 from delete import delete
+from create_table import create_table
 
 menu = """
 -------------------------------------MENÚ----------------------------------
