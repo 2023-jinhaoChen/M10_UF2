@@ -2,6 +2,7 @@ from connection import connection, cursor
 from create_table import create_table
 from read import read
 from create import create
+from delete import delete
 
 menu = """
 -------------------------------------MENÚ----------------------------------
