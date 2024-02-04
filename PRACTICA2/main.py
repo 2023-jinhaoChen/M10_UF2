@@ -15,6 +15,7 @@ menu = """
 6. Salir
 """
 
+# Return True cuando el usuario introduce 6 False en contrario
 def get_user_option():
     option = get_valid_input(6, menu)
 
@@ -37,11 +38,13 @@ def get_user_option():
         case 6:
             print("BYE")
             return True
-        
+
+# Validar el input del usuario, tiene que eligir entre 1 hasta el 6 
 def get_valid_input(input_range = int, text = str):
     valid = False
     valid_input = list(range(1, input_range + 1))
 
+    # Pedir un valor hasta que el valor es uno de la lista
     while not valid:
         try:
             user_input = int(input(text))
@@ -49,13 +52,23 @@ def get_valid_input(input_range = int, text = str):
                 valid = True
             else:
                 print(f"El valor introducido es invalido, tiene que ser uno de estos: {valid_input}")
+
         except:
             print(f"No es un número, tiene que ser un numero de estos: {valid_input}")
 
     return user_input
 
-salir = False
-while (not salir):
-    salir = get_user_option()
+if __name__ == "__main__":
+    try:
+        salir = False
+        # entra el loop infinito hasta que el usuario elige la opción de salir
+        while (not salir):
+            salir = get_user_option()
 
-connection.close()
+    except Exception as e:
+        print(e)
+
+    # Cerrar la conexion siempre al salir del programa
+    finally:
+        if connection:
+            connection.close()

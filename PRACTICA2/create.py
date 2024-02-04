@@ -1,3 +1,4 @@
+# Crear un nuevo registro a la tabla users
 def create(connection):
     user_name = input("Introduce el nombre del usuario nuevo\n")
     surname = input("Introduce el primer apellido del usuario nuevo\n")
@@ -14,6 +15,6 @@ def create(connection):
         with connection.cursor() as cursor:
             cursor.execute(create_query)
             connection.commit()
-            
+
     except Exception as e:
         print(e)

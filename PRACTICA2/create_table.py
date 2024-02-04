@@ -1,3 +1,4 @@
+# La creación de la tabla users
 def create_table(connection):
     create_table_query = """
     CREATE TABLE users(
@@ -9,9 +10,11 @@ def create_table(connection):
         email VARCHAR(255) NOT NULL
     );
     """
+
     try:
-        connection.execute(create_table_query)
+        with connection.cursor() as cursor:
+            cursor.execute(create_table_query)
+            connection.commit()
+
     except Exception as e:
         print(e)
-    finally:
-        connection.execute("COMMIT;")

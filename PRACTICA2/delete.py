@@ -1,3 +1,4 @@
+# Elimina un registro de la tabla users por id
 def delete(connection):
     user_id = input("Introduce el id del usuario que desea eliminar\n")
 

@@ -1,3 +1,4 @@
+# Actualiza un registro de la tabla users por id
 def update(connection):
     user_id = input("Introduce el id del usuario que desea actualizar\n")
     user_name = input("Introduce el nombre del usuario\n")

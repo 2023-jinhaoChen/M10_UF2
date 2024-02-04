@@ -1,5 +1,5 @@
 import psycopg2
-
+# Datos de la conexion al base de datos 
 connection = psycopg2.connect(
     database = "postgres",
     user = "jinhao",
@@ -7,5 +7,3 @@ connection = psycopg2.connect(
     host = "localhost",
     port = "5432"
 )
-
-cursor = connection.cursor()
