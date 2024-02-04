@@ -4,50 +4,50 @@
 
 Antes de crear la tabla:
 
-![1707068220442](image/README/1707068220442.png)
+![before_create_table](image/README/before_create_table.png)
 
 Después de crear la tabla:
 
-![1707068280981](image/README/1707068280981.png)
+![after_create_table](image/README/after_create_table.png)
 
 ## CREATE
 
 Antes de crear registro:
 
-![1707068371073](image/README/1707068371073.png)
+![before_create](image/README/before_create.png)
 
 Después de crear registro:
 
-![1707068547299](image/README/1707068547299.png)
+![create](image/README/create.png)
 
-![1707068588711](image/README/1707068588711.png)
+![before_create](image/README/after_create.png)
 
 ## READ
 
-Pgadmin:![1707068734038](image/README/1707068734038.png)
+Pgadmin:![before_update](image/README/before_update.png)
 
-main.py:![1707068691406](image/README/1707068691406.png)
+main.py:![read](image/README/read.png)
 
 ## UPDATE
 
 Antes de update:
 
-![1707068734038](image/README/1707068734038.png)
+![before_update](image/README/before_update.png)
 
 Después de update:
 
-![1707068919995](image/README/1707068919995.png)
+![update](image/README/update.png)
 
-![1707068942550](image/README/1707068942550.png)
+![after_update](image/README/after_update.png)
 
 ## DELETE
 
 Antes de delete:
 
-![1707068942550](image/README/1707068942550.png)
+![after_update](image/README/after_update.png)
 
 Después de delete:
 
-![1707069023595](image/README/1707069023595.png)
+![delete](image/README/delete.png)
 
-![1707069036547](image/README/1707069036547.png)
+![after_delete](image/README/after_delete.png)
