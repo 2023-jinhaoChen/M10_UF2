@@ -1,6 +1,7 @@
-from connection import *
+from connection import connection, cursor
 from create_table import create_table
 from read import read
+from create import create
 
 menu = """
 -------------------------------------MENÚ----------------------------------
@@ -43,15 +44,16 @@ def get_valid_input(input_range = int, text = str):
         try:
             user_input = int(input(text))
             if user_input in valid_input:
-                return user_input
+                valid = True
             else:
                 print(f"El valor introducido es invalido, tiene que ser uno de estos: {valid_input}")
         except:
             print(f"No es un número, tiene que ser un numero de estos: {valid_input}")
+
     return user_input
 
 salir = False
 while (not salir):
     salir = get_user_option()
 
-conn.close()
+connection.close()
